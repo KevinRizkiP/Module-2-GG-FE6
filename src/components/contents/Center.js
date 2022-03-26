@@ -3,10 +3,12 @@ import Buttons from "../header/Buttons";
 import Cover from "../header/Cover";
 import Header from "../header/Header";
 import data from "../../utils/SingleSample";
+import Songs from "./Songs";
+import SongsData from "../../utils/SongsData";
 
 function Center() {
   return (
-    <div className="flex-grow">
+    <div className="flex-grow overflow-y-scroll scrollbar-hide h-screen">
       <Header />
       <Cover
         ImagePlaylist={data.album.images[1].url}
@@ -18,6 +20,7 @@ function Center() {
         tracks={data.album.total_tracks}
       />
       <Buttons />
+      <SongsData />
     </div>
   );
 }
