@@ -3,7 +3,6 @@ import Buttons from "../header/Buttons";
 import Cover from "../header/Cover";
 import Header from "../header/Header";
 import data from "../../utils/SingleSample";
-import Songs from "./Songs";
 import SongsData from "../../utils/SongsData";
 
 function Center() {
